@@ -1,0 +1,11 @@
+.Example {
+  padding-top: 10px;
+}
+
+.Example h3 {
+  font-size: 14px;
+}
+
+.Example span {
+  opacity: 0.8;
+}

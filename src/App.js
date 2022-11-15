@@ -1,15 +1,17 @@
 import "./App.css";
-import logo from "./logo.png";
 import Dictionary from "./Dictionary";
 
 function App() {
+  const randomWords = require(`random-words`);
   return (
     <div className="App">
       <div className="container">
         <header className="App-header">
-          <img src={logo} alt="logo" className="App-logo img-fluid" />
+          <h1>
+            <i className="fa fa-solid fa-book App-logo "></i> Dictionary
+          </h1>
         </header>
-        <Dictionary defaultKeyword="hero" />
+        <Dictionary defaultKeyword={randomWords(5)} />
         <footer>Coded by Sarai Kong</footer>
       </div>
     </div>

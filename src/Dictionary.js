@@ -4,7 +4,7 @@ import Results from "./Results";
 import "./Dictionary.css";
 
 export default function Dictionary(props) {
-  const [keyword, setKeyword] = useState(props.defaultKeyword);
+  const [keyword, setKeyword] = useState(props.defaultKeyword[0]);
   const [results, setResults] = useState(null);
   const [loaded, setLoaded] = useState(false);
 
@@ -43,6 +43,11 @@ export default function Dictionary(props) {
               placeholder="Enter a word"
             />
           </form>
+          <p className="hint">
+            Suggested words: {props.defaultKeyword[1]},{" "}
+            {props.defaultKeyword[2]}, {props.defaultKeyword[3]},{" "}
+            {props.defaultKeyword[4]}
+          </p>
         </section>
         <Results results={results} />
       </div>
