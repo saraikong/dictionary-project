@@ -20,6 +20,11 @@ export default function Photos(props) {
             );
           })}
         </div>
+        <div className="pexels">
+          <a href="https://www.pexels.com" target="_blank" rel="noreferrer">
+            Photos provided by Pexels
+          </a>
+        </div>
       </section>
     );
   } else {
